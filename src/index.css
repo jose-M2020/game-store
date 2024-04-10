@@ -1,0 +1,60 @@
+:root{
+    --height-screen: 158px;
+}
+
+body{
+    margin: 0;
+    background: #ebebf8;
+}
+
+.fit-height-screen {
+    min-height: calc(100vh - var(--height-screen));
+}
+
+.login {
+    /*background: url("assets/images/bg.png");*/
+}
+
+/*.login::after{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*    background: #417d87;*/
+/*    opacity: .5;*/
+/*    z-index: 1;*/
+/*}*/
+
+.container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.p-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-button .p-button-label{
+    flex: none;
+}
+
+.game-card > div {
+    transition: box-shadow .3s;
+}
+.game-card:hover > div {
+    box-shadow: 0 5px 10px #d7d0d0;
+}
+
+.game-card img{
+    transition: transform .3s;
+}
+
+.game-card:hover img {
+    transform: scale(1.2) translateY(-20px);
+}
